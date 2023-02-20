@@ -148,29 +148,3 @@ FROM orders
 JOIN customers ON orders.customer_id = customers.id
 GROUP BY customers.id, customers.name
 ORDER BY total_products_purchased DESC;
-
-
-
-SELECT *FROM products
-
-SELECT p1.name, p1.price, CONCAT(p1.id, '-', p2.id) AS 'id_pair' FROM products p1
-JOIN products p2
-ON p1.id = p2.id
-
-
-SELECT *,
-		CASE
-			WHEN price>20 THEN PRICE
-            END AS 20_price,
-		CASE
-			WHEN price<20 THEN price
-            END AS less_than_20
-FROM products
-
-
-SELECT *,
-			CASE
-				WHEN id =  5 THEN 10
-                ELSE id
-                END AS NEW_COLUMN
-FROM products 
