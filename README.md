@@ -1,1 +1,1 @@
-# sql_basic_intermediate_level_queries
+SQL Queries for E-Commerce Data Analysis
